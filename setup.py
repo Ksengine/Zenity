@@ -34,14 +34,14 @@ except ImportError:
 
 
 # Define name and description
-name = 'Zenity'
+name = 'pyzenity'
 description = "lightweight and full featured library to display dialogs with python."
 
 ## Setup
 
 setup(
     name=name,
-    version='1.0.0',
+    version='2.0.0',
     author='Kavindu Santhusa',
     author_email='kavindusanthusa@gmail.com',
     license='MIT',
@@ -54,8 +54,12 @@ setup(
     platforms='any',
     provides=[name],
     install_requires=[],
-    py_modules=['zenity'],
-    scripts=['zenity.py'],
+    py_modules=['pyzenity'],
+    scripts=['pyzenity.py'],
+    entry_points='''
+        [console_scripts]
+        pyzenity=pyzenity:cli
+    ''',
     zip_safe=True,
     classifiers=[
         'Intended Audience :: Developers',
