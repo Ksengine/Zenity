@@ -104,9 +104,9 @@ def show(*args,**kwargs):
             w=True
             del kwargs["writeable"]
         for kwarg in kwargs:
-            flags_list.append("--"+kwarg+"="+repr(kwargs[kwarg]))
+            flags_list.append("--"+kwarg+"="+str(kwargs[kwarg]))
         for arg in args:
-            flags_list.append("--"+repr(arg))
+            flags_list.append("--"+str(arg))
         if w:
             return _message(flags_list,writeable=True)
         return _message(flags_list)
