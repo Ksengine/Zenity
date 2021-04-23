@@ -3,7 +3,7 @@
 **No nedd to improve this package. If anyone need to contribute, please inform to kavindusanthusa@gmail.com**
 
 zenity  is a Python library that will display GTK+ dialogs using zanity
- tool, and return (eitherin the return code, or on standard output) the
+ tool(this is not a Python zenity port), and return (eitherin the return code, or on standard output) the
  users input. This allows you to present information, and ask for infor
 mation from the user.
 
